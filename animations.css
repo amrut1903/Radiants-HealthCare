@@ -1,0 +1,118 @@
+/* =========================================
+   PRELOADER
+   ========================================= */
+#preloader {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: var(--color-bg);
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.8s ease, visibility 0.8s ease;
+}
+
+.loader-circle {
+    width: 60px;
+    height: 60px;
+    border: 3px solid rgba(14, 165, 233, 0.2);
+    border-top-color: var(--color-primary);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-bottom: 20px;
+}
+
+.loader-text {
+    font-family: var(--font-heading);
+    color: var(--color-text);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 0.5; }
+    50% { opacity: 1; }
+}
+
+/* =========================================
+   SCROLL REVEAL ANIMATIONS
+   ========================================= */
+.reveal {
+    opacity: 0;
+    will-change: transform, opacity;
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: translate(0, 0) scale(1);
+}
+
+/* Specific Animations */
+.fade-up {
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.slide-left {
+    transform: translateX(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.slide-right {
+    transform: translateX(-50px);
+    transition: opacity 0.8s ease-out, transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.zoom-in {
+    transform: scale(0.9);
+    transition: opacity 0.8s ease-out, transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Stagger Children */
+.stagger-children.visible .stat-item,
+.stagger-children.visible .service-item {
+    opacity: 0;
+    animation: fadeUpItem 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.stagger-children.visible > *:nth-child(1) { animation-delay: 0.1s; }
+.stagger-children.visible > *:nth-child(2) { animation-delay: 0.2s; }
+.stagger-children.visible > *:nth-child(3) { animation-delay: 0.3s; }
+.stagger-children.visible > *:nth-child(4) { animation-delay: 0.4s; }
+
+@keyframes fadeUpItem {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* =========================================
+   FLOATING ELEMENTS
+   ========================================= */
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0px); }
+}
+
+/* =========================================
+   MOBILE: Disable scroll reveal (show everything)
+   ========================================= */
+@media (max-width: 768px) {
+    .reveal {
+        opacity: 1 !important;
+        transform: none !important;
+    }
+}
