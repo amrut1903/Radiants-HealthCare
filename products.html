@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radiants Health Care | Shaping the Future of Healthcare</title>
+    <meta name="description" content="A premium pharmaceutical company pushing the boundaries of modern medicine.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;800&family=Alex+Brush&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/style.css?v=12.0">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+    <div class="nav-overlay"></div>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader-circle"></div>
+        <div class="loader-text">Initializing...</div>
+    </div>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="header-top">
+            <div class="container top-inner">
+                <a href="index.html" class="brand-logo" style="display:flex; align-items:center; gap:10px; text-decoration:none;">
+                    <svg width="40" height="40" viewBox="0 0 100 100">
+                        <polygon points="50,5 95,27.5 95,72.5 50,95 5,72.5 5,27.5" fill="none" stroke="#00008B" stroke-width="12" stroke-linejoin="round"/>
+                        <polygon points="50,30 70,42 70,58 50,70 30,58 30,42" fill="none" stroke="var(--color-accent)" stroke-width="8" stroke-linejoin="round"/>
+                    </svg>
+                    <span class="logo-text" style="font-size:1.2rem; line-height:1.1; font-weight:800; color:#00008B; text-align:left; letter-spacing: 1px; font-weight:900; font-family:'Arial Black', sans-serif;">RADIANTS<br>HEALTH CARE</span>
+                </a>
+                <div class="social-links">
+                    <span class="social-text">Follow Us :</span>
+                    <a href="#" class="social-icon">in</a>
+                    <a href="#" class="social-icon">f</a>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="container bottom-inner">
+                
+                <div class="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <nav class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About Us</a>
+                    <div class="nav-dropdown">
+                        <a href="#" class="dropdown-toggle">Products ▾</a>
+                        <div class="dropdown-menu">
+                            <a href="products.html?filter=all">All Products</a>
+                            <a href="products.html?filter=orthopaedics">Orthopaedics</a>
+                            <a href="products.html?filter=neurology">Neurology</a>
+                            <a href="products.html?filter=gynaecology">Gynaecology</a>
+                            <a href="products.html?filter=urology">Urology</a>
+                            <a href="products.html?filter=surgery">Surgery & Post-Operative Care</a>
+                            <a href="products.html?filter=oncology">Oncology Supportive Care</a>
+                            <a href="products.html?div=krivi" style="border-top: 1px solid #f0f0f0; margin-top: 5px; padding-top: 15px; color: #c93a20 !important; font-weight: bold;">Krivi Products</a>
+                        </div>
+                    </div>
+                    <div class="nav-dropdown">
+                        <a href="#" class="dropdown-toggle">Divisions ▾</a>
+                        <div class="dropdown-menu">
+                            <a href="products.html?div=radiants">Radiants Health Care</a>
+                            <a href="products.html?div=krivi">Krivi Pharmaceuticals</a>
+                        </div>
+                    </div>
+                    <a href="doctors-reviews.html">Doctor's Reviews</a>
+                    <a href="contact.html">Contact Us</a>
+                
+                    </nav>
+
+                
+            </div>
+        </div>
+    </header>
+
+    
+    <main>
+        <section class="page-hero" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/hero_all_products.png'); background-size: cover; background-position: center;">
+            <div class="container text-left" style="text-align: left;">
+                <h1 class="page-hero-title" style="color: white; text-shadow: 0 2px 4px rgba(0,0,0,0.5);">Our Products</h1>
+                <p class="page-hero-subtitle" style="color: #e2e8f0; text-shadow: 0 1px 3px rgba(0,0,0,0.5); margin: 0;">Comprehensive therapeutic solutions from Radiants Health Care and Krivi Pharmaceuticals.</p>
+            </div>
+        </section>
+
+        <section class="page-section bg-gray" style="padding-top: 40px;">
+            <div class="container">
+                <!-- Filter Bar -->
+                <div class="filter-bar">
+                    <button class="filter-btn active" data-filter="all">All Products</button>
+                    <button class="filter-btn" data-filter="orthopaedics">Orthopaedics</button>
+                    <button class="filter-btn" data-filter="neurology">Neurology</button>
+                    <button class="filter-btn" data-filter="gynaecology">Gynaecology</button>
+                    <button class="filter-btn" data-filter="urology">Urology</button>
+                    <button class="filter-btn" data-filter="surgery">Surgery</button>
+                    <button class="filter-btn" data-filter="oncology">Oncology</button>
+                </div>
+
+                <div class="product-grid reveal fade-up">
+                    
+    <a href="product-soluperz.html" class="product-card-clean product-item orthopaedics gynaecology surgery oncology div-radiants" data-category="orthopaedics gynaecology surgery oncology" data-division="radiants">
+        <div class="card-img-area" style="position: relative;">
+            <img loading="lazy" src="images/soluperz.png" alt="Soluperz" style="width:100%; height:100%; object-fit:contain; display:block;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="mock-box-sm" style="border-color:var(--color-primary); color:var(--color-primary); display:none;">Soluperz</div>
+            <span style="position:absolute; top:10px; right:10px; background:var(--color-primary); color:#fff; font-size:0.7rem; padding:3px 8px; border-radius:12px; z-index: 2;">RADIANTS</span>
+        </div>
+        <div class="card-title-area">
+            <h3 style="color:var(--color-primary);">Soluperz</h3>
+            <p style="font-size:0.85rem; color:#666; margin-top:5px;">Proteolytic Enzyme + Anti-inflammatory</p>
+        </div>
+    </a>
+    
+    <a href="product-rutoperz.html" class="product-card-clean product-item orthopaedics surgery div-radiants" data-category="orthopaedics surgery" data-division="radiants">
+        <div class="card-img-area" style="position: relative;">
+            <img loading="lazy" src="images/rutoperz.png" alt="Rutoperz" style="width:100%; height:100%; object-fit:contain; display:block;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="mock-box-sm" style="border-color:var(--color-primary); color:var(--color-primary); display:none;">Rutoperz</div>
+            <span style="position:absolute; top:10px; right:10px; background:var(--color-primary); color:#fff; font-size:0.7rem; padding:3px 8px; border-radius:12px; z-index: 2;">RADIANTS</span>
+        </div>
+        <div class="card-title-area">
+            <h3 style="color:var(--color-primary);">Rutoperz</h3>
+            <p style="font-size:0.85rem; color:#666; margin-top:5px;">Trusted Enzyme Therapy</p>
+        </div>
+    </a>
+    
+    <a href="product-stifex.html" class="product-card-clean product-item orthopaedics div-radiants" data-category="orthopaedics" data-division="radiants">
+        <div class="card-img-area" style="position: relative;">
+            <img loading="lazy" src="images/stifex.png" alt="Stifex" style="width:100%; height:100%; object-fit:contain; display:block;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="mock-box-sm" style="border-color:var(--color-primary); color:var(--color-primary); display:none;">Stifex</div>
+            <span style="position:absolute; top:10px; right:10px; background:var(--color-primary); color:#fff; font-size:0.7rem; padding:3px 8px; border-radius:12px; z-index: 2;">RADIANTS</span>
+        </div>
+        <div class="card-title-area">
+            <h3 style="color:var(--color-primary);">Stifex</h3>
+            <p style="font-size:0.85rem; color:#666; margin-top:5px;">Joint & Arthritis Care</p>
+        </div>
+    </a>
+    
+    <a href="product-stifex-plus.html" class="product-card-clean product-item orthopaedics div-radiants" data-category="orthopaedics" data-division="radiants">
+        <div class="card-img-area" style="position: relative;">
+            <img loading="lazy" src="images/stifex-plus.png" alt="Stifex Plus" style="width:100%; height:100%; object-fit:contain; display:block;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="mock-box-sm" style="border-color:var(--color-primary); color:var(--color-primary); display:none;">Stifex Plus</div>
+            <span style="position:absolute; top:10px; right:10px; background:var(--color-primary); color:#fff; font-size:0.7rem; padding:3px 8px; border-radius:12px; z-index: 2;">RADIANTS</span>
+        </div>
+        <div class="card-title-area">
+            <h3 style="color:var(--color-primary);">Stifex Plus</h3>
+            <p style="font-size:0.85rem; color:#666; margin-top:5px;">Advanced Arthritis & Cartilage Repair</p>
+        </div>
+    </a>
+    
+    <a href="product-radifrac.html" class="product-card-clean product-item orthopaedics div-radiants" data-category="orthopaedics" data-division="radiants">
+        <div class="card-img-area" style="position: relative;">
+            <img loading="lazy" src="images/radifrac.png" alt="Radifrac" style="width:100%; height:100%; object-fit:contain; display:block;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="mock-box-sm" style="border-color:var(--color-primary); color:var(--color-primary); display:none;">Radifrac</div>
+            <span style="position:absolute; top:10px; right:10px; background:var(--color-primary); color:#fff; font-size:0.7rem; padding:3px 8px; border-radius:12px; z-index: 2;">RADIANTS</span>
+        </div>
+        <div class="card-title-area">
+            <h3 style="color:var(--color-primary);">Radifrac</h3>
+            <p style="font-size:0.85rem; color:#666; margin-top:5px;">Bone & Fracture Care</p>
+        </div>
+    </a>
+    
+    <a href="product-radifrac-plus.html" class="product-card-clean product-item orthopaedics div-radiants" data-category="orthopaedics" data-division="radiants">
+        <div class="card-img-area" style="position: relative;">
+            <img loading="lazy" src="images/radifrac-plus.png" alt="Radifrac Plus" style="width:100%; height:100%; object-fit:contain; display:block;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="mock-box-sm" style="border-color:var(--color-primary); color:var(--color-primary); display:none;">Radifrac Plus</div>
+            <span style="position:absolute; top:10px; right:10px; background:var(--color-primary); color:#fff; font-size:0.7rem; padding:3px 8px; border-radius:12px; z-index: 2;">RADIANTS</span>
+        </div>
+        <div class="card-title-area">
+            <h3 style="color:var(--color-primary);">Radifrac Plus</h3>
+            <p style="font-size:0.85rem; color:#666; margin-top:5px;">Advanced Bone Strength & Regeneration</p>
+        </div>
+    </a>
+    
+    <a href="product-lac-er-600.html" class="product-card-clean product-item orthopaedics div-radiants" data-category="orthopaedics" data-division="radiants">
+        <div class="card-img-area" style="position: relative;">
+            <img loading="lazy" src="images/lac-er-600.png" alt="Lac ER 600" style="width:100%; height:100%; object-fit:contain; display:block;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="mock-box-sm" style="border-color:var(--color-primary); color:var(--color-primary); display:none;">Lac ER 600</div>
+            <span style="position:absolute; top:10px; right:10px; background:var(--color-primary); color:#fff; font-size:0.7rem; padding:3px 8px; border-radius:12px; z-index: 2;">RADIANTS</span>
+        </div>
+        <div class="card-title-area">
+            <h3 style="color:var(--color-primary);">Lac ER 600</h3>
+            <p style="font-size:0.85rem; color:#666; margin-top:5px;">Orthopaedic Care</p>
+        </div>
+    </a>
+    
+    <a href="product-rmin-pfs.html" class="product-card-clean product-item neurology div-radiants" data-category="neurology" data-division="radiants">
+        <div class="card-img-area" style="position: relative;">
+            <img loading="lazy" src="images/rmin-pfs.png" alt="RMIN-PFS" style="width:100%; height:100%; object-fit:contain; display:block;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="mock-box-sm" style="border-color:var(--color-primary); color:var(--color-primary); display:none;">RMIN-PFS</div>
+            <span style="position:absolute; top:10px; right:10px; background:var(--color-primary); color:#fff; font-size:0.7rem; padding:3px 8px; border-radius:12px; z-index: 2;">RADIANTS</span>
+        </div>
+        <div class="card-title-area">
+            <h3 style="color:var(--color-primary);">RMIN-PFS</h3>
+            <p style="font-size:0.85rem; color:#666; margin-top:5px;">Neurology & Vitamin B12 Therapy</p>
+        </div>
+    </a>
+    
+    <a href="product-unol-plus.html" class="product-card-clean product-item neurology gynaecology oncology div-radiants" data-category="neurology gynaecology oncology" data-division="radiants">
+        <div class="card-img-area" style="position: relative;">
+            <img loading="lazy" src="images/unol-plus.png" alt="Unol Plus" style="width:100%; height:100%; object-fit:contain; display:block;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="mock-box-sm" style="border-color:var(--color-primary); color:var(--color-primary); display:none;">Unol Plus</div>
+            <span style="position:absolute; top:10px; right:10px; background:var(--color-primary); color:#fff; font-size:0.7rem; padding:3px 8px; border-radius:12px; z-index: 2;">RADIANTS</span>
+        </div>
+        <div class="card-title-area">
+            <h3 style="color:var(--color-primary);">Unol Plus</h3>
+            <p style="font-size:0.85rem; color:#666; margin-top:5px;">Cellular Energy & Antioxidant Wellness</p>
+        </div>
+    </a>
+    
+    <a href="product-radipro.html" class="product-card-clean product-item gynaecology surgery div-radiants" data-category="gynaecology surgery" data-division="radiants">
+        <div class="card-img-area" style="position: relative;">
+            <img loading="lazy" src="images/radipro.png" alt="Radipro" style="width:100%; height:100%; object-fit:contain; display:block;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="mock-box-sm" style="border-color:var(--color-primary); color:var(--color-primary); display:none;">Radipro</div>
+            <span style="position:absolute; top:10px; right:10px; background:var(--color-primary); color:#fff; font-size:0.7rem; padding:3px 8px; border-radius:12px; z-index: 2;">RADIANTS</span>
+        </div>
+        <div class="card-title-area">
+            <h3 style="color:var(--color-primary);">Radipro</h3>
+            <p style="font-size:0.85rem; color:#666; margin-top:5px;">Wellness & Gut Health</p>
+        </div>
+    </a>
+    <div class="grid-divider" style="grid-column: 1 / -1; width: 100%; height: 2px; background-color: #ddd; margin: 30px 0;"></div>
+
+    <a href="product-oxamil-tablet.html" class="product-card-clean product-item urology div-radiants" data-category="urology" data-division="radiants">
+        <div class="card-img-area" style="position: relative;">
+            <img loading="lazy" src="images/oxamil-tablet.png" alt="Oxamil Tablet" style="width:100%; height:100%; object-fit:contain; display:block;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="mock-box-sm" style="border-color:var(--color-primary); color:var(--color-primary); display:none;">Oxamil Tablet</div>
+            <span style="position:absolute; top:10px; right:10px; background:var(--color-primary); color:#fff; font-size:0.7rem; padding:3px 8px; border-radius:12px; z-index: 2;">RADIANTS</span>
+        </div>
+        <div class="card-title-area">
+            <h3 style="color:var(--color-primary);">Oxamil Tablet</h3>
+            <p style="font-size:0.85rem; color:#666; margin-top:5px;">Urology Care</p>
+        </div>
+    </a>
+    
+    <a href="product-oxamil-syrup.html" class="product-card-clean product-item urology div-radiants" data-category="urology" data-division="radiants">
+        <div class="card-img-area" style="position: relative;">
+            <img loading="lazy" src="images/oxamil-syrup.png" alt="Oxamil Syrup" style="width:100%; height:100%; object-fit:contain; display:block;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="mock-box-sm" style="border-color:var(--color-primary); color:var(--color-primary); display:none;">Oxamil Syrup</div>
+            <span style="position:absolute; top:10px; right:10px; background:var(--color-primary); color:#fff; font-size:0.7rem; padding:3px 8px; border-radius:12px; z-index: 2;">RADIANTS</span>
+        </div>
+        <div class="card-title-area">
+            <h3 style="color:var(--color-primary);">Oxamil Syrup</h3>
+            <p style="font-size:0.85rem; color:#666; margin-top:5px;">Urology Care</p>
+        </div>
+    </a>
+    
+    <a href="product-diminh.html" class="product-card-clean product-item surgery div-radiants" data-category="surgery" data-division="radiants">
+        <div class="card-img-area" style="position: relative;">
+            <img loading="lazy" src="images/diminh.png" alt="DIMIN H" style="width:100%; height:100%; object-fit:contain; display:block;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="mock-box-sm" style="border-color:var(--color-primary); color:var(--color-primary); display:none;">DIMIN H</div>
+            <span style="position:absolute; top:10px; right:10px; background:var(--color-primary); color:#fff; font-size:0.7rem; padding:3px 8px; border-radius:12px; z-index: 2;">RADIANTS</span>
+        </div>
+        <div class="card-title-area">
+            <h3 style="color:var(--color-primary);">DIMIN H</h3>
+            <p style="font-size:0.85rem; color:#666; margin-top:5px;">Surgery & Post-Operative Care</p>
+        </div>
+    </a>
+    <div class="grid-divider" style="grid-column: 1 / -1; width: 100%; height: 2px; background-color: #ddd; margin: 30px 0;"></div>
+
+    <a href="product-elastros.html" class="product-card-clean product-item krivi-wellness div-krivi" data-category="krivi-wellness" data-division="krivi">
+        <div class="card-img-area" style="position: relative;">
+            <img loading="lazy" src="images/elastros.png" alt="Elastros" style="width:100%; height:100%; object-fit:contain; display:block;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="mock-box-sm" style="border-color:#c93a20; color:#c93a20; display:none;">Elastros</div>
+            <span style="position:absolute; top:10px; right:10px; background:#c93a20; color:#fff; font-size:0.7rem; padding:3px 8px; border-radius:12px; z-index: 2;">KRIVI</span>
+        </div>
+        <div class="card-title-area">
+            <h3 style="color:#c93a20;">Elastros</h3>
+            <p style="font-size:0.85rem; color:#666; margin-top:5px;">Women Wellness & Nutritional</p>
+        </div>
+    </a>
+    
+    <a href="product-osedrate.html" class="product-card-clean product-item orthopaedics div-krivi" data-category="orthopaedics" data-division="krivi">
+        <div class="card-img-area" style="position: relative;">
+            <img loading="lazy" src="images/osedrate.png" alt="Osedrate" style="width:100%; height:100%; object-fit:contain; display:block;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="mock-box-sm" style="border-color:#c93a20; color:#c93a20; display:none;">Osedrate</div>
+            <span style="position:absolute; top:10px; right:10px; background:#c93a20; color:#fff; font-size:0.7rem; padding:3px 8px; border-radius:12px; z-index: 2;">KRIVI</span>
+        </div>
+        <div class="card-title-area">
+            <h3 style="color:#c93a20;">Osedrate</h3>
+            <p style="font-size:0.85rem; color:#666; margin-top:5px;">Bone Density & Calcium Therapy</p>
+        </div>
+    </a>
+    
+    <a href="product-kriviceff.html" class="product-card-clean product-item anti-bacterial div-krivi" data-category="anti-bacterial" data-division="krivi">
+        <div class="card-img-area" style="position: relative;">
+            <img loading="lazy" src="images/kriviceff.png" alt="Kriviceff" style="width:100%; height:100%; object-fit:contain; display:block;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="mock-box-sm" style="border-color:#c93a20; color:#c93a20; display:none;">Kriviceff</div>
+            <span style="position:absolute; top:10px; right:10px; background:#c93a20; color:#fff; font-size:0.7rem; padding:3px 8px; border-radius:12px; z-index: 2;">KRIVI</span>
+        </div>
+        <div class="card-title-area">
+            <h3 style="color:#c93a20;">Kriviceff</h3>
+            <p style="font-size:0.85rem; color:#666; margin-top:5px;">Anti-Bacterial Therapy</p>
+        </div>
+    </a>
+    
+    <a href="product-oralixir.html" class="product-card-clean product-item oral-care div-krivi" data-category="oral-care" data-division="krivi">
+        <div class="card-img-area" style="position: relative;">
+            <img loading="lazy" src="images/oralixir.png" alt="Oralixir" style="width:100%; height:100%; object-fit:contain; display:block;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="mock-box-sm" style="border-color:#c93a20; color:#c93a20; display:none;">Oralixir</div>
+            <span style="position:absolute; top:10px; right:10px; background:#c93a20; color:#fff; font-size:0.7rem; padding:3px 8px; border-radius:12px; z-index: 2;">KRIVI</span>
+        </div>
+        <div class="card-title-area">
+            <h3 style="color:#c93a20;">Oralixir</h3>
+            <p style="font-size:0.85rem; color:#666; margin-top:5px;">Oral & Throat Care</p>
+        </div>
+    </a>
+    
+                </div>
+                
+                <div id="no-products-msg" style="display:none; text-align:center; padding: 50px; font-size: 1.2rem; color: #666;">
+                    No products found for this category.
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const products = document.querySelectorAll('.product-item');
+            const noMsg = document.getElementById('no-products-msg');
+            const dividers = document.querySelectorAll('.grid-divider');
+            
+            const heroSection = document.querySelector('.page-hero');
+            const heroTitle = document.querySelector('.page-hero-title');
+            const heroSubtitle = document.querySelector('.page-hero-subtitle');
+            const heroContainer = document.querySelector('.page-hero .container');
+
+            const categoryContent = {
+                'all': {
+                    title: 'Our Products',
+                    subtitle: 'Comprehensive therapeutic solutions from Radiants Health Care and Krivi Pharmaceuticals.',
+                    align: 'left',
+                    bg: 'assets/hero_all_products.png'
+                },
+                'orthopaedics': {
+                    title: 'Orthopaedics',
+                    subtitle: 'Advanced therapies for bone healing, joint protection, and fracture recovery.',
+                    align: 'left',
+                    bg: 'assets/hero_orthopaedics.png'
+                },
+                'neurology': {
+                    title: 'Neurology',
+                    subtitle: 'Precision care for nerve regeneration and neurological wellness.',
+                    align: 'left',
+                    bg: 'assets/hero_neurology.png'
+                },
+                'gynaecology': {
+                    title: 'Gynaecology',
+                    subtitle: "Specialized healthcare solutions for women's wellness and post-surgical recovery.",
+                    align: 'left',
+                    bg: 'assets/hero_gynaecology.png'
+                },
+                'urology': {
+                    title: 'Urology',
+                    subtitle: 'Advanced formulations for urological health and management.',
+                    align: 'left',
+                    bg: 'assets/hero_urology.png'
+                },
+                'surgery': {
+                    title: 'Surgery & Post-Operative Care',
+                    subtitle: 'Trusted formulations to accelerate healing and reduce surgical inflammation.',
+                    align: 'left',
+                    bg: 'assets/hero_surgery.png'
+                },
+                'oncology': {
+                    title: 'Oncology Supportive Care',
+                    subtitle: 'Supportive care solutions for patients undergoing oncological treatment.',
+                    align: 'left',
+                    bg: 'assets/hero_oncology.png'
+                },
+                'div-krivi': {
+                    title: 'Krivi Pharmaceuticals',
+                    subtitle: 'Targeted therapies in anti-bacterial, wellness, and oral care.',
+                    align: 'left',
+                    bg: 'assets/hero_krivi.png'
+                },
+                'div-radiants': {
+                    title: 'Radiants Health Care',
+                    subtitle: 'Comprehensive orthopaedic, surgical, and neurological therapies.',
+                    align: 'left',
+                    bg: 'assets/hero_radiants.png'
+                }
+            };
+
+            function applyFilter(filterValue) {
+                // Update active button state
+                filterBtns.forEach(btn => btn.classList.remove('active'));
+                const targetBtn = Array.from(filterBtns).find(btn => btn.getAttribute('data-filter') === filterValue);
+                if (targetBtn) targetBtn.classList.add('active');
+                
+                // Update Hero Section
+                if(categoryContent[filterValue]) {
+                    const catData = categoryContent[filterValue];
+                    heroTitle.innerText = catData.title;
+                    heroSubtitle.innerText = catData.subtitle;
+                    
+                    if (catData.align === 'center') {
+                        heroContainer.classList.add('text-center');
+                        heroContainer.style.textAlign = 'center';
+                        heroSubtitle.style.margin = '0 auto';
+                    } else {
+                        heroContainer.classList.remove('text-center');
+                        heroContainer.style.textAlign = 'left';
+                        heroSubtitle.style.margin = '0';
+                    }
+                    
+                    heroSection.style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('${catData.bg}')`;
+                    heroSection.style.backgroundSize = 'cover';
+                    heroSection.style.backgroundPosition = 'center';
+                    heroSection.style.transition = 'all 0.3s ease';
+                }
+                
+                dividers.forEach(div => {
+                    div.style.display = (filterValue === 'all') ? 'block' : 'none';
+                });
+
+                let count = 0;
+                products.forEach(p => {
+                    if (filterValue === 'all') {
+                        p.style.display = 'block';
+                        count++;
+                    } else {
+                        // Check if the product has the class of the filterValue
+                        if (p.classList.contains(filterValue)) {
+                            p.style.display = 'block';
+                            count++;
+                        } else {
+                            p.style.display = 'none';
+                        }
+                    }
+                });
+
+                if(count === 0) {
+                    noMsg.style.display = 'block';
+                } else {
+                    noMsg.style.display = 'none';
+                }
+            }
+
+            // Check URL parameters for initial filter
+            const urlParams = new URLSearchParams(window.location.search);
+            const catFilter = urlParams.get('filter');
+            const divFilter = urlParams.get('div');
+            
+            if (divFilter) {
+                applyFilter('div-' + divFilter);
+            } else if (catFilter) {
+                applyFilter(catFilter);
+            } else {
+                applyFilter('all');
+            }
+
+            // Add click listeners
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const filter = btn.getAttribute('data-filter');
+                    applyFilter(filter);
+                    // Update URL without reload
+                    if(filter.startsWith('div-')) {
+                        window.history.pushState({}, '', '?div=' + filter.replace('div-', ''));
+                    } else {
+                        window.history.pushState({}, '', '?filter=' + filter);
+                    }
+                });
+            });
+        });
+    </script>
+
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="index.html" class="brand-logo" style="display:flex; align-items:center; gap:10px; text-decoration:none;">
+                    <svg width="40" height="40" viewBox="0 0 100 100">
+                        <polygon points="50,5 95,27.5 95,72.5 50,95 5,72.5 5,27.5" fill="none" stroke="#00008B" stroke-width="12" stroke-linejoin="round"/>
+                        <polygon points="50,30 70,42 70,58 50,70 30,58 30,42" fill="none" stroke="var(--color-accent)" stroke-width="8" stroke-linejoin="round"/>
+                    </svg>
+                    <span class="logo-text" style="font-size:1.2rem; line-height:1.1; font-weight:800; color:#00008B; text-align:left; letter-spacing: 1px; font-weight:900; font-family:'Arial Black', sans-serif;">RADIANTS<br>HEALTH CARE</span>
+                </a>
+                <p style="margin-top:1rem;">Innovating today for a healthier tomorrow.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <a href="about.html">About Us</a>
+                <a href="products.html">Products Catalog</a>
+                <a href="doctors-reviews.html">Doctor's Reviews</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact</h4>
+                <p>Unit No. 718, 7th Floor, TC Jaina Tower&#8209;1,<br>District Centre, Janakpuri, New Delhi - 110058</p>
+                <p>Email: <a href="mailto:radiantshealthcare@gmail.com" style="color:inherit; text-decoration:none;">radiantshealthcare@gmail.com</a></p>
+                <p>Web: <a href="http://www.radiantshealthcare.com" style="color:inherit; text-decoration:none;">www.radiantshealthcare.com</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Radiants Health Care. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html>
